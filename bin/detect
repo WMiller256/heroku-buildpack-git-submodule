@@ -2,8 +2,11 @@
 
 app_dir="$1"
 
-echo "$1"
-echo "$app_dir"
+for f in "$1"/*
+do
+    echo "$f"
+done
+
 if [ ! -f "$app_dir/.gitmodules" ]; then
     echo "$app_dir"
 #    exit 1

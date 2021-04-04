@@ -20,9 +20,6 @@ fi
 # make sure we're in the root of the app dir
 cd "$APP_DIR"
 
-# remove existing .gitmodules, we'll check out it again
-rm .gitmodules
-
 # create an empty repo to fetch into
 git init -q
 
