@@ -3,6 +3,7 @@
 app_dir="$1"
 
 if [ ! -f "$app_dir/.gitmodules" ]; then
+    echo "$app_dir"
     exit 1
 fi
 
