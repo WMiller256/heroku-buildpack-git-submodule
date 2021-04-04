@@ -1,16 +1,4 @@
 #!/bin/sh
 
-app_dir="$1"
-
-for f in "$1"/*
-do
-    echo "$f"
-done
-
-if [ ! -f "$app_dir/.gitmodules" ]; then
-    echo "$app_dir"
-#    exit 1
-fi
-
 echo "Git submodules"
 exit 0
