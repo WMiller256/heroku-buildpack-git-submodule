@@ -2,10 +2,11 @@
 
 app_dir="$1"
 
+echo "$1"
 echo "$app_dir"
 if [ ! -f "$app_dir/.gitmodules" ]; then
     echo "$app_dir"
-    exit 1
+#    exit 1
 fi
 
 echo "Git submodules"
